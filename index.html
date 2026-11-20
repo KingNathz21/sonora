@@ -66,7 +66,7 @@ function stageBind(){
  document.querySelectorAll('[data-playlist]').forEach(el=>el.onclick=()=>{page='playlist-detail';activePlaylist=el.dataset.playlist;render()});
  document.querySelectorAll('[data-artist]').forEach(el=>el.onclick=()=>{page='artist-detail';activePlaylist=el.dataset.artist;render()});
  $('#heroUpload')?.addEventListener('click',upload);$('#create-playlist')?.addEventListener('click',createPlaylist);
- $('#lib-search')?.addEventListener('input',()=>render());
+ $('#lib-search')?.addEventListener('input',()=>{const input=$('#lib-search'),v=input.value,pos=input.selectionStart;render();const next=$('#lib-search');if(next){next.focus();next.setSelectionRange(pos,pos)}});
  $('#lib-sort')?.addEventListener('change',e=>{librarySort=e.target.value;render()});
  document.querySelectorAll('[data-lib-filter]').forEach(b=>b.onclick=()=>{libraryFilter=b.dataset.libFilter;render()});
 }
