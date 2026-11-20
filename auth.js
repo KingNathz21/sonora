@@ -18,7 +18,6 @@ form.addEventListener("submit", async event => {
     message.textContent = "Enter your username/email and password.";
     return;
   }
-
   loginButton.disabled = true;
   message.textContent = "Signing in…";
   try {
