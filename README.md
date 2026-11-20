@@ -4,7 +4,7 @@
 
 A personal music library and MP3 player with a dark, modern interface.
 
-## Access control\n- Google sign-in using the shared Firebase project `rflofficial`.\n- Only the configured SONORA UID is allowed through the app login gate.\n- The login gate is a frontend restriction; this local-only prototype has no cloud music/database backend yet.\n\n## Current prototype
+## Access control\n- Google sign-in using the shared Firebase project `rflofficial`.\n- Only the configured SONORA UID is allowed through the app login gate.\n- The login gate is a frontend restriction; this local-only prototype has no cloud music/database backend yet.\n\n## Installable PWA\n- Web app manifest and service worker added for installability and shell caching.\n- The service worker caches the app shell and Firebase SDK modules after they have loaded online.\n- Audio files continue to be stored in IndexedDB on the device.\n- Offline login/session verification still needs testing on the deployed HTTPS site.\n\n## Current prototype
 The GitHub Pages-ready `index.html` is a single-file browser prototype featuring:
 - Add audio files from your device
 - Local browser storage (IndexedDB)
