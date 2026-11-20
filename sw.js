@@ -1,4 +1,4 @@
-const CACHE = "sonora-shell-v1";
+const CACHE = "sonora-shell-v2";
 const SHELL = ["./", "./index.html", "./manifest.json", "./logo.svg", "./firebase-config.js", "./auth.js"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(SHELL)).then(() => self.skipWaiting()));
