@@ -1,0 +1,9 @@
+name = "sonora-api"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+[vars]
+FIREBASE_PROJECT = "rflofficial"
+ALLOWED_ORIGIN = "https://kingnathz21.github.io"
+[[r2_buckets]]
+binding = "MUSIC"
+bucket_name = "sonora-music"
